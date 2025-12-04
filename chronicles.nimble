@@ -12,8 +12,8 @@ requires "faststreams >= 0.3.0"
 requires "serialization"
 requires "json_serialization" # Only needed for json outputs
 
-# Allow old nimble versions to parse this nimble file
-requires "testutils"
+before test:
+  requires "testutils"
 
 task test, "run CPU tests":
   when defined(windows):
