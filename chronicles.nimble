@@ -8,7 +8,7 @@ license       = "Apache License 2.0"
 skipDirs      = @["tests"]
 
 requires "nim >= 2.0.16"
-requires "faststreams >= 0.3.0"
+requires "https://github.com/NimVenture/nim-faststreams.git >= 0.3.0"
 requires "serialization"
 requires "json_serialization" # Only needed for json outputs
 
